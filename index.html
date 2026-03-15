@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Amy's Website</title>
+    <!-- Loading a modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #24292e;
+            --accent-color: #0366d6;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #586069;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Center card with subtle hover effect */
+        .container {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 3.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 85%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        /* GitHub style primary button */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background-color: #000;
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Bottom link row */
+        .links {
+            margin-top: 2.5rem;
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        /* Mobile adaptation */
+        @media (max-width: 480px) {
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Rocket Icon -->
+        <div style="font-size: 60px; margin-bottom: 20px;">🚀</div>
+        
+        <h1>Hi, I'm Amy</h1>
+        <p>Software developer and creator on GitHub. I'm passionate about building tech solutions and exploring the world of open source.</p>
+        
+        <!-- Button linking to your profile -->
+        <a href="https://github.com/amy175128-glitch" target="_blank" class="btn">
+            View my GitHub Profile
+        </a>
+
+        <div class="links">
+            <a href="https://github.com/amy175128-glitch?tab=repositories" target="_blank">Projects</a>
+            <span>•</span>
+            <a href="#">Blog</a>
+            <span>•</span>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>
